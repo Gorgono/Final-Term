@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>First Exercice</title>
+<meta charset="UTF-8"/>
+
+	<script type = "text/javascript">
+			  function displayNextImage1() {
+				  x = (x === images1.length - 1) ? 0 : x + 1;
+				  document.getElementById("img").src = images1[x];
+			  }
+
+			  function displayPreviousImage1() {
+				  x = (x <= 0) ? images1.length - 1 : x - 1;
+				  document.getElementById("img").src = images1[x];
+			  }
+
+			  var images1 = [], x = -1;
+			  images1[0] = "Images/Tic.png"
+			  images1[1] = "Images/Tac.png";
+			  images1[2] = "Images/Tic.png"
+			  images1[3] = "Images/Tac.png"
+			  images1[4] = "Images/Boom.png";
+			  
+			  function displayNextImage() {
+				  x = (x === images.length - 1) ? 0 : x + 1;
+				  document.getElementById("ext").src = images[x];
+			  }
+
+			  function displayPreviousImage() {
+				  x = (x <= 0) ? images.length - 1 : x - 1;
+				  document.getElementById("ext").src = images[x];
+			  }
+
+			  function startTimer() {
+			  
+				  setInterval(displayNextImage1, 1500);
+				  setInterval(displayNextImage, 8000);
+			  }
+
+			  var images = [], x = -1;
+			  images[0] = "Images/Home.png"
+			  images[1] = "Images/Home.png";
+			  images[2] = "Images/Home.png"
+			  images[3] = "Images/Home.png"
+			  images[4] = "Images/Home.png";
+			  
+			  
+			  
+			  
+	</script>
+
+
+</head>
+
+
+<body onload = "startTimer()">
+
+ <img style="WIDTH:273px; HEIGHT:239px" id="img" src="Images/Tic.png">       
+
+ <br>
+ <br>
+ <br>
+ 
+  <a href="Index.html"><img style="width:100px;height:100px;border:0;" id="ext"></a>
+  
+</body>
+</html>
