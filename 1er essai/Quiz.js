@@ -22,11 +22,11 @@ var cat6name = "None";
 
 var cat1 = ($("input[@name=q1]:checked").val() != "a"); 
            
-var cat2 = ($("input[@name=q2]:checked").val() != "a");  
+var cat2 = ($("input[@name=q2]:checked").val() != "c");  
 
-var cat3 = ($("input[@name=q3]:checked").val() != "a");  
+var cat3 = ($("input[@name=q3]:checked").val() != "b");  
 
-var cat4 = ($("input[@name=q4]:checked").val() != "a");  
+var cat4 = ($("input[@name=q4]:checked").val() != "d");  
 
 var cat5 = ($("input[@name=q5]:checked").val() != "a"); 
 
